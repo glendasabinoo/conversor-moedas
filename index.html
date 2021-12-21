@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="barra-navegacao"></nav>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">CONVERSOR DE MOEDAS</h1>
+    </header>
+    <main class="conteudo-principal">
+        <section class="secao secao-dolar">
+            <article class="secao__conteudo">
+                <div class="secao__formulario">
+                    <fieldset>
+                        <legend>Valor em doláres</legend>
+                        <div class="secao__formulario__grupo">
+                            <label for="valor-dolares">Valor em dólares</label>
+                            <input id="valor-dolares" type="number" value="0">
+                        </div>
+                    </fieldset>
+                    <button onclick="converter()">Converter</button>
+                </div>
+            </article>
+            <footer class="secao__rodape">
+                <h3 class="secao__rodape__valor">
+                    <span id="resposta">R$ 0,00</span><small>/reais</small>
+                </h3>
+                <p class="secao__rodape__legenda">Valor em reais</p>
+            </footer>
+        </section>
+    </main>
+    <footer class="rodape">copyright</footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
